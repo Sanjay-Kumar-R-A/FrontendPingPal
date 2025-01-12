@@ -26,7 +26,7 @@ const Home = () => {
         <div className="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
           <div>
             <img
-              src="./img/encrypt.svg"
+              src="./src/img/encrypt.svg"
               alt="Secure Messaging"
               className="w-16 h-16 mx-auto mb-4"
             />
