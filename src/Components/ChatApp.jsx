@@ -146,7 +146,7 @@ const ChatApp = () => {
               onClick={() => selectUserOrGroup(user)}
             >
               <img
-                src={user.profileImage || "./img/avatar.jpg"}
+                src={user.profileImage || "./src/img/avatar.jpg"}
                 alt={user.name}
                 className="w-12 h-12 rounded-full mr-3"
               />
