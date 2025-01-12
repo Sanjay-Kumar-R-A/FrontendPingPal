@@ -26,7 +26,7 @@ const Home = () => {
         <div className="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
           <div>
             <img
-              src="encrypt.svg"
+              src="./img/encrypt.svg"
               alt="Secure Messaging"
               className="w-16 h-16 mx-auto mb-4"
             />
@@ -39,7 +39,7 @@ const Home = () => {
           </div>
           <div>
             <img
-              src="connect.svg"
+              src="./img/connect.svg"
               alt="Connect Easily"
               className="w-16 h-16 mx-auto mb-4"
             />
@@ -52,7 +52,7 @@ const Home = () => {
           </div>
           <div>
             <img
-              src="free.svg"
+              src="./img/free.svg"
               alt="Free to Use"
               className="w-16 h-16 mx-auto mb-4"
             />
@@ -65,7 +65,7 @@ const Home = () => {
           </div>
           <div>
   <img
-    src="business.svg"
+    src="./img/business.svg"
     alt="PingPal Business"
     className="w-16 h-16 mx-auto mb-4"
   />
@@ -78,7 +78,7 @@ const Home = () => {
 </div>
 <div>
   <img
-    src="pay.svg"
+    src="./img/pay.svg"
     alt="PingPal Pay"
     className="w-16 h-16 mx-auto mb-4"
   />
@@ -91,7 +91,7 @@ const Home = () => {
 </div>
 <div>
   <img
-    src="files.svg"
+    src="./img/files.svg"
     alt="PingPal File Transfer"
     className="w-16 h-16 mx-auto mb-4"
   />

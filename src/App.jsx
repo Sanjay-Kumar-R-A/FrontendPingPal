@@ -7,13 +7,7 @@ import ForgotPassword from "./Pages/ForgotPassword";
 import ResetPassword from "./Pages/ResetPassword";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import CreateChat from "./Components/createChat";
-import SendMessage from "./Components/sendMessage";
-import ChatDetails from "./Components/chatDetails";
-import ChatsList from "./Components/chatsList";
-import GroupManagement from "./Pages/group";
-
-
+import ChatApp from "./Components/ChatApp";
 
 
 const App = () => {
@@ -26,26 +20,25 @@ const App = () => {
 
         <Routes>
           
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home/>} />
           <Route path='/Home' element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={< ResetPassword/>} />
-          <Route path="/createChat" element={< CreateChat/>} />
-          <Route path="/sendMessage" element={< SendMessage/>} />
-          <Route path="/chatDetails" element={< ChatDetails/>} />
-          <Route path="/chatsList" element={< ChatsList/>} />
-          <Route path="/groupManagement" element={< GroupManagement/>} />
-         
+          <Route path="/chatapp" element={< ChatApp/>} />
         
-        </Routes>
 
-       <div>
-       <Footer />
-       </div>
+          
+        </Routes>
+        
+        <Footer />
+      
+       
+       
     </Router>
     </div>
   );
 };
+
 export default App;

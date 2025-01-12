@@ -10,17 +10,46 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
   const navigate = useNavigate();
 
+  const isAuthenticated = !!localStorage.getItem("token");
+  const isAdmin = localStorage.getItem("role") === "admin";
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("role");
+    navigate("/login");
+  };
+
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post("https://backendpingpal.onrender.com/api/auth/login", { email, password });
       localStorage.setItem("token", response.data.token); // Save JWT token
+      localStorage.setItem("role", response.data.role); // Save role (admin or user)
       toast.success("Login successful! Redirecting...", { position: "top-center" });
-      setTimeout(() => navigate("/CreateChat"), 2000); // Redirect after 2 seconds
+      setTimeout(() => navigate("/chatapp")); // Redirect after 2 seconds
     } catch (err) {
       toast.error(err.response?.data?.message || "An error occurred.", { position: "top-center" });
     }
   };
+
+  if (isAuthenticated) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
+  <div className="p-6 bg-white shadow-lg rounded-lg text-center">
+    <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+      Welcome back! You are already logged in.
+    </h2>
+    <button
+      onClick={handleLogout}
+      className="px-6 py-2 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 transition duration-200"
+    >
+      Logout
+    </button>
+  </div>
+</div>
+
+    );
+  }
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-white to-gray-100">

@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-white py-6">
       <div className="container mx-auto px-6 text-center">
         <p className="text-gray-600 mb-4">
-          © 2024 PingPal | Built by Sanjay Kumar
+          © 2025 PingPal | Built by Sanjay Kumar
         </p>
         <div className="flex justify-center space-x-6">
           <a
