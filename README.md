@@ -7,6 +7,7 @@ API DOCUMENTATION OF THE PINGPAL (POSTMAN)
 https://documenter.getpostman.com/view/39168811/2sAYJ6DfSc
 
 
+![Screenshot (238)](https://github.com/user-attachments/assets/604491ae-649a-4314-ae8d-e8c690fe734c)
 
 ![Screenshot (232)](https://github.com/user-attachments/assets/c92e14ef-a038-4a68-8ab9-5c64bd364f92)
 ![Screenshot (233)](https://github.com/user-attachments/assets/81e4d729-2e40-4359-bcd6-1166c150e67c)
